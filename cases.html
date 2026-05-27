@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="星绘设计工作室更多案例，包含3D产品渲染、场景渲染、AI场景设计与动态设计作品。"
+    />
+    <title>更多案例｜星绘设计工作室</title>
+    <link rel="icon" href="./assets/logo.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body id="top" data-page="cases">
+    <div class="page-shell">
+      <header class="site-header" aria-label="页面顶部">
+        <div class="container header-inner">
+          <a class="brand" href="./index.html" aria-label="返回星绘设计工作室首页">
+            <img
+              class="brand-image"
+              src="./assets/logo.png"
+              alt="星绘设计工作室"
+            />
+          </a>
+
+          <nav class="site-nav" aria-label="主导航" id="siteNav"></nav>
+
+          <button class="header-cta" type="button" data-open-contact="true">联系我们</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero container" aria-labelledby="heroTitle">
+          <h1 id="heroTitle">更多案例</h1>
+        </section>
+
+        <section class="portfolio container" id="works" aria-labelledby="worksTitle">
+          <div class="sr-only" id="worksTitle">更多作品案例</div>
+          <div id="workGroups" class="work-groups"></div>
+          <div class="case-pagination" id="casePagination" aria-label="案例分页"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer container">
+        <a class="back-to-top" href="./index.html" aria-label="返回首页">
+          <span>返回首页</span>
+        </a>
+      </footer>
+    </div>
+
+    <div class="preview-modal" id="previewModal" hidden>
+      <button class="preview-backdrop" type="button" data-close-preview="true" aria-label="关闭预览"></button>
+      <div class="preview-panel" role="dialog" aria-modal="true" aria-labelledby="previewTitle">
+        <button class="preview-close" type="button" data-close-preview="true" aria-label="关闭预览">×</button>
+        <div class="preview-media">
+          <img id="previewImage" alt="" />
+        </div>
+        <div class="preview-caption">
+          <h3 id="previewTitle"></h3>
+          <p id="previewMeta"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-modal" id="contactModal" hidden>
+      <button class="contact-backdrop" type="button" data-close-contact="true" aria-label="关闭二维码"></button>
+      <div class="contact-panel" role="dialog" aria-modal="true" aria-labelledby="contactQrTitle">
+        <button class="contact-close" type="button" data-close-contact="true" aria-label="关闭二维码">×</button>
+        <div class="contact-qr">
+          <img id="contactQrImage" alt="" />
+        </div>
+        <div class="contact-copy">
+          <h3 id="contactQrTitle"></h3>
+          <p id="contactQrMeta"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
